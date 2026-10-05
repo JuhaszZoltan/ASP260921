@@ -1,4 +1,4 @@
-@model IEnumerable<ASP260921.Models.Movie>
+@model IEnumerable<Movie>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,39 +13,39 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                @Html.DisplayNameFor(m => m.Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReleaseDate)
+                @Html.DisplayNameFor(m => m.ReleaseDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Genre)
+                @Html.DisplayNameFor(m => m.Genre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                @Html.DisplayNameFor(m => m.Price)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var movie in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(model => item.Title)
+                @Html.DisplayFor(m => movie.Title)
             </td>
             <td>
-                @Html.DisplayFor(model => item.ReleaseDate)
+                @Html.DisplayFor(m => movie.ReleaseDate)
             </td>
             <td>
-                @Html.DisplayFor(model => item.Genre)
+                @Html.DisplayFor(m => movie.Genre)
             </td>
             <td>
-                @Html.DisplayFor(model => item.Price)
+                @Html.DisplayFor(m => movie.Price)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@movie.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@movie.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@movie.Id">Delete</a>
             </td>
         </tr>
 }
