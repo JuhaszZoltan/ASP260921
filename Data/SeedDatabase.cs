@@ -15,52 +15,52 @@ public static class SeedDatabase
         _contex.Movies.AddRange(
             new Movie //no. 1
             {
-                Title = "film",
-                ReleaseDate = new(2000, 01, 01),
-                Genre = "Comedy",
-                Price = 2000,
+                Title = "Kill Bill vol. 1",
+                ReleaseDate = new(2003, 10, 18),
+                Genre = "Action",
+                Price = 1500,
             },
             new Movie //no. 2
             { 
-                Title = "film",
-                ReleaseDate = new(2000, 01, 01),
-                Genre = "Comedy",
-                Price = 2000,
+                Title = "Kill Bill vol. 2",
+                ReleaseDate = new(2004, 04, 25),
+                Genre = "Action",
+                Price = 1500,
             },
             new Movie //no. 3
             {
-                Title = "film",
-                ReleaseDate = new(2000, 01, 01),
-                Genre = "Comedy",
+                Title = "Cloud Atlas",
+                ReleaseDate = new(2012, 11, 22),
+                Genre = "Drama",
                 Price = 2000,
             },
             new Movie //no. 4
             {
-                Title = "film",
-                ReleaseDate = new(2000, 01, 01),
-                Genre = "Comedy",
-                Price = 2000,
+                Title = "The Shawshark Redemption",
+                ReleaseDate = new(1994, 05, 25),
+                Genre = "Drama",
+                Price = 1000,
             },
             new Movie //no. 5
             {
-                Title = "film",
-                ReleaseDate = new(2000, 01, 01),
-                Genre = "Comedy",
-                Price = 2000,
+                Title = "The Lord of the Rings: Two Towers",
+                ReleaseDate = new(2002, 01, 09),
+                Genre = "Adventure",
+                Price = 2500,
             },
             new Movie //no. 6
             {
-                Title = "film",
-                ReleaseDate = new(2000, 01, 01),
-                Genre = "Comedy",
-                Price = 2000,
+                Title = "The Matrix",
+                ReleaseDate = new(1999, 08, 05),
+                Genre = "Action",
+                Price = 1500,
             },
             new Movie // no. 7
             {
-                Title = "film",
-                ReleaseDate = new(2000, 01, 01),
-                Genre = "Comedy",
-                Price = 2000,
+                Title = "One Flew Over the Cuckoo's Nest",
+                ReleaseDate = new(1975, 05, 19),
+                Genre = "Drama",
+                Price = 1000,
             });
 
         _contex.SaveChanges();
