@@ -11,6 +11,10 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+using IServiceScope scope = app.Services.CreateScope();
+IServiceProvider services = scope.ServiceProvider;
+SeedDatabase.Initialize(services);
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
