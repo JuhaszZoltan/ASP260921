@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ASP260921.Models;
@@ -13,6 +14,7 @@ public class Movie
     [MaxLength(40)]
     public string? Title { get; set; }
     [DataType(DataType.Date)]
+    [DisplayName("Release Date")]
     public DateTime ReleaseDate { get; set; }
     [Required]
     [MaxLength(20)]
